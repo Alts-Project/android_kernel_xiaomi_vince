@@ -456,4 +456,18 @@ config MACH_XIAOMI_OXYGEN
 	  Support for the Xiaomi Max 2 platform
 	  which is based on QCOM MSM8953 chipset.
 
+config MACH_XIAOMI_VINCE
+	bool  "XIAOMI platform"
+	depends on ARCH_MSM8953
+	help
+	  Support for the Xiaomi Redmi 5 Plus platform
+	  which is based on QCOM MSM8953 chipset.
+
+config MACH_XIAOMI_MI8953
+	bool  "XIAOMI platform"
+	depends on ARCH_MSM8953
+	help
+	  Support for the Xiaomi MSM8953 platform
+	  which is based on QCOM MSM8953 chipset.
+
 endmenu
