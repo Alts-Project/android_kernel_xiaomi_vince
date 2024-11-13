@@ -12,7 +12,7 @@
     compatible = "removed-dma-pool";
 	no-map;
 	reg = <0x0 0x9ff00000 0x0 0x00100000>;
-}
+};
 
 / {
 	aliases {
