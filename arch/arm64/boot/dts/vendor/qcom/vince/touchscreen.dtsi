@@ -273,7 +273,7 @@
 			/* synaptics,max-y-for-2d = <800>; */
 	    };
 	};
-}:
+};
 
 &mdss_mdp {
 	qcom,mdss-pref-prim-intf = "dsi";
