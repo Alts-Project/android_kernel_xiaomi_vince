@@ -35,6 +35,7 @@ int change_par_buf;
 int LCM_effect[4] = {0x2,0xf0,0xf00,0xf000};
 
 DEFINE_LED_TRIGGER(bl_led_trigger);
+#endif
 
 void mdss_dsi_panel_pwm_cfg(struct mdss_dsi_ctrl_pdata *ctrl)
 {
