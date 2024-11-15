@@ -8967,8 +8967,9 @@ static int fg_probe(struct platform_device *pdev)
 	init_completion(&chip->first_soc_done);
 	init_completion(&chip->fg_reset_done);
 	dev_set_drvdata(&pdev->dev, chip);
+
 	chip->debug_dump = kmalloc(sizeof(char)*2048, GFP_KERNEL);
-	memset(chip->debug_dump, '\0', sizeof(char)*2
+	memset(chip->debug_dump, '\0', sizeof(char)*2048);
 
 	if (of_get_available_child_count(pdev->dev.of_node) == 0) {
 		pr_err("no child nodes\n");
@@ -9189,7 +9190,7 @@ static int fg_suspend(struct device *dev)
 
 static int fg_resume(struct device *dev)
 {
-	struct fg_chip *chip = dev_get_drvdata(dev);
+	struct fg_chip *chip = dev_get_drvdata(dev);Co-authored-by: shenprjkt <shenprjktplayground@gmail.com>
 
 	if (!chip->sw_rbias_ctrl)
 		return 0;
