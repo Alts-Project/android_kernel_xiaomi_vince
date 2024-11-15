@@ -9190,7 +9190,7 @@ static int fg_suspend(struct device *dev)
 
 static int fg_resume(struct device *dev)
 {
-	struct fg_chip *chip = dev_get_drvdata(dev);Co-authored-by: shenprjkt <shenprjktplayground@gmail.com>
+	struct fg_chip *chip = dev_get_drvdata(dev);
 
 	if (!chip->sw_rbias_ctrl)
 		return 0;
