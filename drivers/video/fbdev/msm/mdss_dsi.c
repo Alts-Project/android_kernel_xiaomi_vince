@@ -25,6 +25,8 @@
 #include "mdss_dba_utils.h"
 #include <linux/delay.h>
 
+bool NVT_gesture_func_on = true;
+
 #define CMDLINE_DSI_CTL_NUM_STRING_LEN 2
 
 /* Master structure to hold all the information about the DSI/panel */
