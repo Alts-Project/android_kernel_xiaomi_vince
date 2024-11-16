@@ -463,7 +463,7 @@ config MACH_XIAOMI_VINCE
 	  Support for the Xiaomi Redmi 5 Plus platform
 	  which is based on QCOM MSM8953 chipset.
 
-config MACH_XIAOMI_MI8953
+config MACH_XIAOMI_MSM8953
 	bool  "XIAOMI platform"
 	depends on ARCH_MSM8953
 	help
